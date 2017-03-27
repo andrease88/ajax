@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX Assignment</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/spectre.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<section class="container" id="loading-site">
+		<div class="spinnertwo">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+	</section>
+	<section class="hide" id="site">
+		<div class="columns">
+			<div class="column col-md-12" id="weather-div">
+				<div class="column col-6 float-left"><h4 class="text-center" id="name"></h4><h3 class="text-center" id="temp"></h3></div>
+				<div class="column col-6 float-right text-center animate"><img id="icon"></img></div>
+			</div>
+		</div>
+			<!-- <div class="column col-12 text-center">
+				<h1></h1>
+			</div> -->
+		<div class="columns">
+			<div class="column col-md-12" id="sl-info">
+		  	<h3 class="text-center mt-10" id="search-header">Sök i lokaltrafiken</h3>
+				<!-- <label>Sök station..</label> -->
+				<div class="box">
+				  <div class="container-4 centered">
+				    <input type="search" id="search" placeholder="Sök station..." />
+				    <button class="icon" id="submit-search"><i class="fa fa-search"></i></button>
+				  </div>
+				</div>
+				<!-- <input class="form-input" id="station-search" type="text" placeholder="">
+				<button class="btn btn-primary" type="submit" id="submit-search">Submit</button> -->
+				<div class="hide" id="loader">
+				  <div class="bounce1"></div>
+				  <div class="bounce2"></div>
+				  <div class="bounce3"></div>
+				</div>
+				<div class="column col-xs-12 centered text-center">
+					<ul id="stations-to-pick"></ul>
+				</div>
+				<div id="metros-div">
+					<h4 id="metro-header" class="hide"><i class="fa fa-subway" aria-hidden="true"></i> Tunnelbana</h4>
+					<ul id="metro"></ul></br>
+				</div>
+				<div id="bus-div">
+					<h4 id="bus-header" class="hide"><i class="fa fa-bus" aria-hidden="true"></i> Bussar</h4>
+					<ul id="bus"></ul></br>
+				</div>
+				<div id="trams-div">
+					<h4 id="trams-header" class="hide"><i class="fa fa-train" aria-hidden="true"></i> Tvärbanan</h4>
+					<ul id="trams"></ul></br>
+				</div>
+			</div>
+		</div>
+	</section>
+  <script src="dist/js/bundle.js"></script>
+	<script src="https://use.fontawesome.com/2d0794fa47.js"></script>
+</body>
+</html>
