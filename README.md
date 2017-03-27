@@ -16,7 +16,6 @@ Använda teknologier:
 * CSS3
 * Fetch API
 * GulpJS
-* NodeJS
 
 Jag har använt mig utav dessa APIer:
 * [SL Platsuppslag](https://www.trafiklab.se/api/sl-platsuppslag)
