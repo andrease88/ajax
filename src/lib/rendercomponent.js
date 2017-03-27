@@ -61,7 +61,7 @@ export const render = {
     ];
     weatherDescription.forEach(icon => {
       if(icon.includes(description)){
-        el.icon.src = '../weatherpics/'+icon+'.png';
+        el.icon.src = 'weatherpics/'+icon+'.png';
       }
     });
     el.name.innerHTML = name;
