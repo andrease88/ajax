@@ -4,23 +4,16 @@ import { request } from './requestapi.js';
 
 
 export const event = {
+  //creates an eventlistener for each station being printed out after the search of station
   clickStationList: (data) => {
     let stations = Array.from(el.stationsList);
+    //each element will have its own click eventlistener
     stations.forEach((station, index) => {
       station.onclick = () => {
         el.stationsToPick.innerHTML = '';
+        //clicked element will send over with index to realTimeInfo
         request.realTimeInfo(index, data);
       };
     });
   },
-  // key: (element) => {
-  //   element.onkeydown = (event) => {
-  //     if(event.keyCode === 13){
-  //       request.stationName(element.value.trim());
-  //     }
-  //   };
-  // },
-  // click: (element) => {
-  //   element.addEventListener('click', request.stationName(el.stationSearch.value));
-  // }
 };

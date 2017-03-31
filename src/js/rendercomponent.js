@@ -3,6 +3,7 @@ import { el } from './elements.js';
 import { request } from './requestapi.js';
 import { event } from './eventlistener.js';
 
+//pretty much only render functions to manipulate with the DOM, nothing special
 export const render = {
   renderStation: (data) => {
     el.stationsToPick.innerHTML = '';
