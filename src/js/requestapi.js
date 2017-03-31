@@ -48,7 +48,7 @@ export const request = {
     });
   },
   weatherForCity: (lat, lon) => {
-    fetch('api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units=metric'+weather)
+    fetch('http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units=metric'+weather)
     .then(response => {
       return response.json();
     }).then(data => {

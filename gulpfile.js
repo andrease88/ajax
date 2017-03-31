@@ -27,7 +27,6 @@ gulp.task('default', ['sass', 'babel'], () => {
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch('./src/scss/**/*.scss', ['sass']);
     gulp.watch('./src/js/*.js', ['babel']);
-    gulp.watch('./src/lib/*.js', ['babel']);
 });
 
 gulp.task('sass', () => {
