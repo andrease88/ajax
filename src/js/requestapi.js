@@ -4,8 +4,8 @@ import { render } from './rendercomponent.js';
 import { el } from './elements.js';
 
 //APIkeys for SL
-const platsuppslag = 'http://localhost:8000?key=7d3cb8b20f5745b2be5474a62cfcbcf7&searchstring=';
-const realtidsinfo = 'http://localhost:8001?key=4992f5a2c367484498bcb01c85f4c766&siteid=';
+const platsuppslag = 'https://slapione.herokuapp.com?key=7d3cb8b20f5745b2be5474a62cfcbcf7&searchstring=';
+const realtidsinfo = 'https://slapitwo.herokuapp.com?key=4992f5a2c367484498bcb01c85f4c766&siteid=';
 const weather = '&APPID=239d1a8a2bb0f4798577b28c4f22849b';
 
 //Exports request object to any module that wants to use it
@@ -25,6 +25,7 @@ export const request = {
     render.resetStationList();
     el.loader.className = 'spinner';
     fetch(platsuppslag+station+'&stationsonly=true').then(response => {
+      console.log(platsuppslag+station+'&stationsonly=true');
       return response.json();
     }).then(data => {
       el.loader.className = 'hide';
@@ -38,6 +39,7 @@ export const request = {
     data.forEach((stationName, i) => {
       if(index == i)
         fetch(realtidsinfo+stationName.SiteId+'&timewindow=30').then(response => {
+          console.log(realtidsinfo+stationName.SiteId+'&timewindow=30');
           return response.json();
         }).then(data => {
           el.loader.className = 'hide';

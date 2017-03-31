@@ -21,6 +21,11 @@ body{
 	-webkit-animation: pulse 4s infinite;
 }
 
+.time{
+	color: #3879D9;
+	font-weight: bold;
+}
+
 #loading-site{
 	display: flex;
   align-items: center;
@@ -42,27 +47,15 @@ body{
 	background-color: steelblue;
 }
 
-@media screen and (min-width: 768px){
-	#icon{
-		width: 13vw;
-	}
-}
-
-@media screen and (max-width: 767px){
-	#icon{
-		width: 24vw;
-	}
-}
-
 .stations-info{
 	list-style: none;
 	margin: 0;
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 .stations-list{
 	margin: 0;
-	padding: 1rem;
+	padding: 0.5rem;
 	list-style: none;
 	&:hover{
 		cursor: pointer;

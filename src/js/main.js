@@ -1,14 +1,12 @@
 //jshint esversion:6
 //Imports modules
-import { el } from '../lib/elements.js';
-import { request } from '../lib/requestapi.js';
-import { event } from '../lib/eventlistener.js';
+import { el } from './elements.js';
+import { request } from './requestapi.js';
+import { event } from './eventlistener.js';
 
 //Slef invoked function to handle apps functions
 (() => {
-  (() => {
-    request.getIP();
-  })();
+  request.getIP();
 
   const app = {
     searchStaion: () => {
