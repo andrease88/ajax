@@ -16,7 +16,6 @@ export const request = {
     }).then(data => {
       let lat = data.latitude;
       let lon = data.longitude;
-      console.log(lat, lon);
       request.weatherForCity(lat, lon);
     }).catch(error => {
       console.log(error);
