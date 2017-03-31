@@ -2,7 +2,7 @@
 
 ## Andreas Engström, Javascript 2 - Fend16
 
-[Länk till projektet live här.]: www.andrease.se/ajax
+[Länk till projektet live här.](www.andrease.se/ajax)
 
 Mitt mål med applikationen var att snabbt kunna få fram information om väder och realtidsinfo om SL's hållplatser.
 Så fort man laddar in hemsidan gör sidan ett anrop där man får info om vart man är lokaliserad (ungefär)
