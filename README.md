@@ -21,7 +21,7 @@ Använda teknologier:
 Jag har använt mig utav dessa APIer:
 * [SL Platsuppslag](https://www.trafiklab.se/api/sl-platsuppslag)
 * [SL Realtidsinformation 4](https://www.trafiklab.se/api/sl-realtidsinformation-4)
-* [IP-API](http://ip-api.com/docs/)
+* [IPAPI](https://ipapi.co/)
 * [OpenWeatherMap](https://openweathermap.org/current)
 
 Arbetsprocess:
