@@ -11,11 +11,12 @@ const weather = '&APPID=239d1a8a2bb0f4798577b28c4f22849b';
 //Exports request object to any module that wants to use it
 export const request = {
   getIP: () => {
-    fetch('http://ip-api.com/json/').then(response => {
+    fetch('https://ipapi.co/json').then(response => {
       return response.json();
     }).then(data => {
-      let lat = data.lat;
-      let lon = data.lon;
+      let lat = data.latitude;
+      let lon = data.longitude;
+      console.log(lat, lon);
       request.weatherForCity(lat, lon);
     }).catch(error => {
       console.log(error);
