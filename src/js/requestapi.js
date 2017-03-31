@@ -25,7 +25,6 @@ export const request = {
     render.resetStationList();
     el.loader.className = 'spinner';
     fetch(platsuppslag+station+'&stationsonly=true').then(response => {
-      console.log(platsuppslag+station+'&stationsonly=true');
       return response.json();
     }).then(data => {
       el.loader.className = 'hide';
@@ -39,7 +38,6 @@ export const request = {
     data.forEach((stationName, i) => {
       if(index == i)
         fetch(realtidsinfo+stationName.SiteId+'&timewindow=30').then(response => {
-          console.log(realtidsinfo+stationName.SiteId+'&timewindow=30');
           return response.json();
         }).then(data => {
           el.loader.className = 'hide';
