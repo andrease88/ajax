@@ -2,7 +2,7 @@
 
 ## Andreas Engström, Javascript 2 - Fend16
 
-[Länk till projekt här...(funkar inte just nu)](https://pappagnu.github.io/ajax)
+[Länk till projektet live här.](https://pappagnu.github.io/ajax)
 
 Mitt mål med applikationen var att snabbt kunna få fram information om väder och realtidsinfo om SL's hållplatser.
 Så fort man laddar in hemsidan gör sidan ett anrop där man får info om vart man är lokaliserad (ungefär)
@@ -16,6 +16,7 @@ Använda teknologier:
 * CSS3
 * Fetch API
 * GulpJS
+* Spectre.css
 
 Jag har använt mig utav dessa APIer:
 * [SL Platsuppslag](https://www.trafiklab.se/api/sl-platsuppslag)
