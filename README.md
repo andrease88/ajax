@@ -18,6 +18,7 @@ Använda teknologier:
 * Fetch API
 * GulpJS
 * Spectre.css
+* Heroku (JSON server)
 
 Jag har använt mig utav dessa APIer:
 * [SL Platsuppslag](https://www.trafiklab.se/api/sl-platsuppslag)
